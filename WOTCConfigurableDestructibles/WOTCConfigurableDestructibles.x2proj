@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>de243d94-5e65-48e2-9137-980189bfa504</Guid>
+    <Name>WOTCConfigurableDestructibles</Name>
+    <Description>This mod allows to change damage and explosion radius of Claymores and other similar explosives via config or other abilities.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTCConfigurableDestructibles</AssemblyName>
+    <RootNamespace>WOTCConfigurableDestructibles</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Config\Base" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WOTCConfigurableDestructibles\" />
+    <Folder Include="Src\WOTCConfigurableDestructibles\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Base\XComEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Base\XComEngine.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\Base\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComConfigurableDestructibles.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_SoldierSkills.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Src\WOTCConfigurableDestructibles\Classes\X2DLCInfo_WOTCConfigurableDestructibles.uc" />
+    <Content Include="Src\WOTCConfigurableDestructibles\Classes\X2EventListener_ConfigurableDestructibles.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTCConfigurableDestructibles\Classes\X2TargetingMethod_ConfigurableDestructibles.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
